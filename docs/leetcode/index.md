@@ -102,11 +102,12 @@ var longestPalindrome = function(s) {
     - `1 <= n <= 8`
 
 - **解题思路**
+
 ```js
 /**
  * @param {number} n 参数 n: number
  * @return {string[]} 返回 字符串数组
- */
+*/
 var generateParenthesis = function(n) {
     // 只有2个可选，左括号或者右括号.
     // 并且最终 左括号数量 == 右括号数量 == n
