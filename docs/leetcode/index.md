@@ -219,3 +219,49 @@ function generateParenthesis(n) {
   return result;
 }
 ```
+
+# Java
+> 偷偷卷技术，希望不会被时代抛弃
+
+## JDK的选择和下载
+> JDK: java开发工具包，包括JRE(java运行时环境)
+
+- JDK的稳定版本
+  - `java 8.0` 继java5.0以来变化最大的版本。
+  - `java 11.0` JDK安装取消独立JRE安装包。
+  - `java 17.0` 最新版稳定版。
+
+- JDK的下载：
+  - Oracle公司官网: [www.oracle.com](https://www.oracle.com/java/technologies/downloads/#java11-windows)
+  - 找到 developers - java -technologies - downloads - 一路下拉找到对应版本
+
+- JDK的安装：
+  - 一路按下一步，安装完成以后，记住安装路径
+  - 配置环境变量： 电脑高级管理，环境变量，系统的path路径，添加java.exe 路径
+  - 例如我的: `C:\Program Files\Java\jdk-11.0.15\bin`
+  - 配好环境变量以后，就可以使用`javac xxx.java`编译出`.class`字节码文件
+  - 进而使用`java xxx`执行代码(注意这里不用加.class)
+
+## Helloworld
+- 编写"Hello.java"代码
+```java
+public class Hello{
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+  }
+}
+```
+- 编译，运行
+```sh
+javac Hello.java 
+# 使用javac编译.java代码，生成.class字节码文件
+java Hello 
+# 使用java虚拟机执行字节码文件，注意不要加.class
+```
+
+## 使用IDEA
+- 首先安装 [IDEA社区版](https://www.jetbrains.com/idea/download/?section=windows#section=windowsIDEA)
+- 具体创建项目，待学习完java基础后再回来使用IDEA  
+- 目前使用VSCode配合插件，实时编译和运行java文件，练习java基础。
+
+## Java基础
